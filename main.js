@@ -32,3 +32,6 @@ function minus() {
 
 const audio = new Audio();
 audio.src = "./click.mp3";
+
+const audio2 = new Audio();
+audio2.src = "./Delete.mp3";
