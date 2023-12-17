@@ -16,9 +16,7 @@ function plus(){
 }
 function minus() {
     result -= 1;
-    if(!!(-result)){
-        result = 0;
-    }
+    result = result === -1 ? 0 : result;
     number.textContent = result;
   }
   
@@ -31,3 +29,6 @@ function minus() {
   btnd.addEventListener('click', minus);
   btnc.addEventListener('click', clear);
   
+
+const audio = new Audio();
+audio.src = "./click.mp3";
