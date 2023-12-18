@@ -12,16 +12,20 @@ let result = 0;
 
 function plus(){
     result += 1;
-    number.textContent = result;
+    updateNum()
 }
 function minus() {
     result -= 1;
     result = result === -1 ? 0 : result;
-    number.textContent = result;
+    updateNum()
   }
   
   function clear() {
     result = 0;
+    updateNum()
+  }
+
+  function updateNum(){
     number.textContent = result;
   }
  
