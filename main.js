@@ -10,6 +10,10 @@ const number = document.querySelector(".number");
 
 let result = 0;
 
+function updateNum(){
+  number.textContent = result;
+}
+
 function plus(){
     result += 1;
     updateNum()
@@ -25,9 +29,6 @@ function minus() {
     updateNum()
   }
 
-  function updateNum(){
-    number.textContent = result;
-  }
  
   btnp.addEventListener('click', plus)
   btnd.addEventListener('click', minus);
